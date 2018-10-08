@@ -1,0 +1,4 @@
+Scripting
+=========
+
+The shebang (!#) is used to tell bash what to use to run the script (bash, sh, python, etc)

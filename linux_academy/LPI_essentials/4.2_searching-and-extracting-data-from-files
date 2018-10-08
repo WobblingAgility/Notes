@@ -1,0 +1,11 @@
+Searching and Extracting Data from Files
+========================================
+
+Viewing Text
+-----------
+
+`less` can be used to view a text file like a man page.
+
+`head` can be used to view the first n lines of a file (default 10).
+
+`tail` can be used to view the last n lines of a file (default 10). the command also has a `-f` flag to "follow" a file and update when the file is writen to.

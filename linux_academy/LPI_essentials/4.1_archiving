@@ -1,0 +1,23 @@
+Archiving
+=========
+
+tar
+---
+
+The `tar` command was used for creating tape archives (hence the name) but is now used to archive files into tar balls. The flags used are:
+
+-c Create a new archive\ 
+-z Compress/uncompress the archive with the gzip algorithm.\ 
+-j Compress/uncompress the archive with the bzip2 algorithm.\ 
+-f The compressed file name.\ 
+-x Extract an archive.\ 
+-v Verbose output.\ 
+-t List the compressed contents.
+
+Order matters with tar so it should be done create (c) > compress (z,j) > file (f).
+
+Other compression archive tools are:
+
+zip and unzip\ 
+gzip and gunzip\ 
+bzip2 and bunzip2

@@ -1,0 +1,27 @@
+Command Line Basics
+===================
+
+Basic Commands
+--------------
+
+- `init 6` is a legacy command to reboot a system.
+- `init 0` is a legacy command to shutdow/halt a system.
+
+uname
+-----
+
+default is to print the kernel (ex. Linux).\ 
+-r:	Print the kernel version number.\ 
+-v:	Print the kernel build.\ 
+-m:	Machine type (ex. x86_64).\ 
+-p:	Processer type (ex. x86_64).\ 
+-o:	Print the OS (ex. GNU/Linux).\ 
+-a: 	Prints all information.\ 
+
+Globbing
+--------
+
+\* is used to match zero or more of any type of character\ 
+\? is used to match any single character\ 
+\[xX\] is used to match any character in the brackets\ 
+\[^xX\] is used to match any character not in the brackets\ 

@@ -1,0 +1,31 @@
+Using the Command Line for Help
+================================
+
+The man Command
+---------------
+
+The man command gives information on tools and executables in the linux system. It has 9 sections
+
+1  Executables and shell commands.
+2  System calls provided by the kernel.
+3  Library calls provided by the libraries.
+4  Device files.
+5  File systems and conventions.
+6  Games.
+7  Misc.
+8  System administration.
+9  Kernel routines.
+
+To specify the section run `man program.section`
+
+`whatis` gives the command's man page summery. The -k flag of the man command searches for mention of a phrase in man page summeries.
+
+info
+----
+
+The `info` command is the GNU perfered way to distribute information and uses hyperlinks.
+
+Other Document Locations
+------------------------
+
+Commands often come with a README.md file which can be found in `/usr/share/doc/`.

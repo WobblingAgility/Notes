@@ -1,0 +1,40 @@
+Using Directoris and Listing Files
+==================================
+
+The Linux Filesyste
+-------------------
+
+All distros follow the (Filesystem Hierarchy Standard)[http://www.pathname.com/fhs/].
+
+The basics are:
+
+- Inverted tree with a single root (/).
+- Paths deliminated with /.
+- Files starting with a single . are hidden.
+- A single . is the current directory.
+- A double . (..) is the parent directory.
+
+The base directories in linux are:
+- `bin` is where user executables are stored.
+- `boot` containers the kernel and files needed to start the kernel.
+- `dev` is where device refereces are.
+- `etc` is the location of config files.
+- `home` is the location of user directories.
+- `lib` and `lib64` is the default location of 32bit and 64bit libraries respectively.
+- `media` is the legacy location that CD, DVDs, and USB flashdrives were mounted.
+- `opt` is optional binaries.
+- `proc` is where information on the running system is.
+- `root` is the root users home directory.
+- `sbin` is for super user binaries.
+- `srv` is a location for servers to server files/information.
+- `sys` is where information on the host machine are stored.
+- `tmp` is a temporary location to store files. Files in it do not survive reboot.
+- `usr` is almost a user mirror of root container documents, fonts and other files as well.
+- `var` is for files of variable size (ex. log files, VM image, system mail, etc...)
+
+Absolute and Reletive Paths
+---------------------------
+
+An absolute path starts with the / (root) directory and lists the full path (ex. /usr/share).
+
+A relative path is relative to the current directory and may involve `.` or `..`.
