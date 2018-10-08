@@ -1,0 +1,13 @@
+Basic Security and User Types
+=============================
+
+Linux Users
+------------
+
+Members of wheel/sudoers is granted sudo permissions which can allow an account to run commands as the "Super User" or root. The `sudo` command can be granted to users without them in the sudo group and can be granted for only some commands.
+
+Every user account is stored in `/etc/passwd`. It gives username, passwrd (x means yes and encrypted), UID, GID, description, home dir, and default shell.
+
+In `/etc/group` you can find information on groups. The first section is the group name, then if a passwrd exists, gid, users in groups.
+
+System users are accounts for programs to interact with the system in a way that is secure and can be controlled. UIDs under 1000 are reserver for system users. These are all true for system groups.

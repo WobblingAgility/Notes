@@ -1,0 +1,16 @@
+Special Directories and Files
+============================
+
+Symbolic Links
+---------------
+
+At a high level, symbolic links are akin to microsoft links. It is a redirect to a different directory/file. A common use if for quick access to files/directories buiried in a directory somewhere.
+
+To break a link you can just `rm` the link file or use `unlink`
+
+Special Files and Folders, and the Sticky Bit
+---------------------------------------------
+
+Two temporary locations are `/var/tmp` and `/tmp` with the main difference being that `/tmp` is not perserved when the system is shutdown. 
+
+The `/tmp` is read write to all users but uses sticky bit to prevent anyone from removing others files. Sticky bit can be applied with `chmod o+t` which appends a t to the permissions like drwxrwxrw*t*. It can also be done with adding a fourth digit to the octal permissions so it would be 1777 where the fist is the sticky bit (default 0 when not specified).

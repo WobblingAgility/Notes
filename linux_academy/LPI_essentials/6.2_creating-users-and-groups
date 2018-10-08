@@ -1,0 +1,13 @@
+Creating Users and Groups
+==========================
+
+Adding Users
+------------
+
+To create a group use `groupadd` proceded by the group name. You can specify GID with `-g`. By default GID is incramented for each group created.
+
+Create a user with `useradd` and specify secondary groups with `-G` then end with username. To add a commment for a user durring creation use `-c`.
+
+New user directories are created from `/etc/skel` which is copied over during creation.
+
+View recent logons with the `last` command.

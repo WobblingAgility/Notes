@@ -1,0 +1,25 @@
+Managing File Permissions
+=========================
+
+File and Directory Permissions
+------------------------------
+
+Permissions are set up in 10 characters. First is d or - and means directory or file The next 9 are 3 groups of 3 with each being a letter or a dash.
+
+The 9 are:  
+(directory)(user read)(user write)(user execute)(group read)(group write)(group execute)(other read)(other write)(other execute)  
+If any is the character ith means true, else it is false.
+
+
+Octal permissions: read is 4, write is 2, execute is 1 so 5 is read&execute(read only), 6 is read&write, 7 is all.
+
+Modifying Permissions
+---------------------
+
+To change permissions use `chmod` and 3 octals (ex. 665) or use who+what (ex. u+x for user add execute).
+
+To change the owner or group use `chown` with username:groupname. Only root(sudo) can change owner.
+
+Both commands take `-R` for recursive.
+
+To just change group use `chgrp` but `chown` is more flexible and usable because `chgrp` is only for users.
